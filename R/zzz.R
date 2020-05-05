@@ -4,7 +4,8 @@
 }
 
 .onLoad <- function(libname, pkgname) {
+  
   # something to run
-  conflict_prefer('select', 'dplyr', losers = NULL, quiet = FALSE)
-  conflict_prefer('extract', 'raster', losers = NULL, quiet = FALSE)
+  conflicted::conflict_prefer('select', 'dplyr', losers = NULL, quiet = FALSE)
+  conflicted::conflict_prefer('extract', 'raster', losers = NULL, quiet = FALSE)
 }

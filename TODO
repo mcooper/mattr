@@ -1,0 +1,11 @@
+custom R functions:
+
+beepr::beep(sound='mario')
+
+Do the clash thing for raster and dplyr
+
+maybe load some of peters functions
+
+`+` <- function(a, b){ifelse(is.numeric(a),sum(a, b), paste0(a, b))}
+
+itnersect_names

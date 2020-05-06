@@ -5,7 +5,12 @@
 
 .onLoad <- function(libname, pkgname) {
   
-  # something to run
-  conflicted::conflict_prefer('select', 'dplyr', losers = NULL, quiet = FALSE)
-  conflicted::conflict_prefer('extract', 'raster', losers = NULL, quiet = FALSE)
+  packages <- rownames(installed.packages())
+  
+  if ('dplyr' %in% packages){
+    select <- dplyr::select
+  }
+  if ('raster' %in% packages){
+    extract <- raster::extract
+  }
 }

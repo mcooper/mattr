@@ -8,5 +8,5 @@ To install and load:
 ```
 library(devtools)
 install_github('mcooper/mattr')
-library(mattr
+library(mattr)
 ```
